@@ -109,105 +109,112 @@ h2 {
 }
 
 .operacion{
-    background-color: #FFFFFF;
+    background-color: #141414;
     height: 350px;
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(5,1fr);
+    gap: 4px;
 }
 .flex {
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 350px; */
+    font-size: 30px;
+    border-radius: 10px;
+}
+.flex:hover{
+    cursor: pointer;
+    color: #5cdd8b;
 }
 .sumar {
-    background-color: rgb(255, 0, 0);
+    background-color: #333030;
     grid-column:1/2 ; 
     grid-row: 1/2;
+    
 }
 .restar {
-    background-color: #00b341;
+    background-color:#333030;
     grid-column:2/3 ; 
     grid-row: 1/2;
 }
 .multiplicar {
-    background-color: #a7b300;
+    background-color: #333030;
     grid-column:3/4 ; 
     grid-row: 1/2;
 }
 .dividir {
-    background-color: #1200b3;
+    background-color: #333030;
     grid-column:4/5 ; 
     grid-row: 1/2;
 }
 .siete {
-    background-color: #9e00b3;
+    background-color: #333030;
     grid-column:1/2 ; 
     grid-row: 2/3;
 }
 .ocho {
-    background-color: #00adb3;
+    background-color: #333030;
     grid-column:2/3 ; 
     grid-row: 2/3;
 }
 .nueve {
-    background-color: #b35400;
+    background-color: #333030;
     grid-column:3/4 ; 
     grid-row: 2/3;
 }
 .cuatro {
-    background-color: #ff0000;
+    background-color: #333030;
     grid-column:1/2 ; 
     grid-row: 3/4;
 }
 .cinco {
-    background-color: #b3a700;
+    background-color: #333030;
     grid-column:2/3 ; 
     grid-row: 3/4;
 }
 .seis {
-    background-color: #b3002a;
+    background-color: #333030;
     grid-column:3/4 ; 
     grid-row: 3/4;
 }
 .uno {
-    background-color: #b30000;
+    background-color: #333030;
     grid-column:1/2 ; 
     grid-row: 4/5;
 }
 .dos {
-    background-color: #24b300;
+    background-color: #333030;
     grid-column:2/3 ; 
     grid-row: 4/5;
 }
 .tres {
-    background-color: #b3ad00;
+    background-color: #333030;
     grid-column:3/4 ; 
     grid-row: 4/5;
 }
 .cero {
-    background-color: #ff0000;
+    background-color: #333030;
     grid-column:1/2 ; 
     grid-row: 5/6;
 }
 .punto {
-    background-color: #21b300;
+    background-color: #333030;
     grid-column:2/3 ; 
     grid-row: 5/6;
 }
 .borrar {
-    background-color: #b39e00;
+    background-color: #bf1515;
     grid-column:3/4 ; 
     grid-row: 5/6;
 }
 .igual {
-    background-color: #9a700c;
+    background-color: #f5961d;
     grid-column:4/5 ; 
     grid-row: 2/6;
 }
+
 
 @media(min-width:1020px) {
     .tarjetas {
