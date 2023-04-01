@@ -209,10 +209,16 @@ h2 {
     grid-column:3/4 ; 
     grid-row: 5/6;
 }
+.borrar:hover{
+    color: #fd4b4b;
+}
 .igual {
-    background-color: #f5961d;
+    background-color: #ec911b;
     grid-column:4/5 ; 
     grid-row: 2/6;
+}
+.igual:hover {
+    color: #ffaf4e;
 }
 
 
