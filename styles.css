@@ -1,0 +1,233 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background-color: var(--color-fondo);
+}
+
+body {
+    margin: 0px;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+:root {
+    --color-fondo: #1c1c1c;
+    --color-letra-tarjetas: #FFFFFF;
+    --color-azul-claro: hsl(209deg 93% 72%);
+    --color-footer: hsl(0deg 0% 5%);
+    --color-header: hsl(0deg 0% 0%);
+    --tamaño-letra-texto: 15px;
+}
+
+.contenedor-header {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(301deg, rgba(0, 0, 0, 1) 22%, rgba(0, 178, 23, 1) 51%, rgba(0, 0, 0, 1) 79%);
+    padding: 15px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    gap: 20px;
+}
+
+.calculadora {
+    height: 50px;
+    width: 50px;
+}
+
+h1 {
+    color: var(--color-letra-tarjetas);
+    font-family: cursive;
+    margin: 0px;
+    font-size: 30px;
+}
+
+.header-dos {
+    display: flex;
+    gap: 10px;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: var(--color-letra-tarjetas);
+    font-family: cursive;
+    margin: 0px;
+    font-size: 30px;
+}
+
+.boton-superior {
+    background-color: #00b341;
+    border-radius: 50px;
+    color: var(--color-letra-tarjetas);
+    margin: 0px 20px;
+    padding: 0px 20px;
+    font-weight: bold;
+    height: 50px;
+}
+
+.boton-superior:hover {
+    background-color: var(--color-fondo);
+    color: #00b341;
+    cursor: pointer;
+}
+
+.redes {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.redes.hover {
+    color: var(--color-fondo);
+}
+
+.container-calculator {
+    background-color: #141414;
+    max-width: 500px;
+    height: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.resultado{
+    background-color: #5cdd8b;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.operacion{
+    background-color: #FFFFFF;
+    height: 350px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+.flex {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px; */
+}
+.sumar {
+    background-color: rgb(255, 0, 0);
+    grid-column:1/2 ; 
+    grid-row: 1/2;
+}
+.restar {
+    background-color: #00b341;
+    grid-column:2/3 ; 
+    grid-row: 1/2;
+}
+.multiplicar {
+    background-color: #a7b300;
+    grid-column:3/4 ; 
+    grid-row: 1/2;
+}
+.dividir {
+    background-color: #1200b3;
+    grid-column:4/5 ; 
+    grid-row: 1/2;
+}
+.siete {
+    background-color: #9e00b3;
+    grid-column:1/2 ; 
+    grid-row: 2/3;
+}
+.ocho {
+    background-color: #00adb3;
+    grid-column:2/3 ; 
+    grid-row: 2/3;
+}
+.nueve {
+    background-color: #b35400;
+    grid-column:3/4 ; 
+    grid-row: 2/3;
+}
+.cuatro {
+    background-color: #ff0000;
+    grid-column:1/2 ; 
+    grid-row: 3/4;
+}
+.cinco {
+    background-color: #b3a700;
+    grid-column:2/3 ; 
+    grid-row: 3/4;
+}
+.seis {
+    background-color: #b3002a;
+    grid-column:3/4 ; 
+    grid-row: 3/4;
+}
+.uno {
+    background-color: #b30000;
+    grid-column:1/2 ; 
+    grid-row: 4/5;
+}
+.dos {
+    background-color: #24b300;
+    grid-column:2/3 ; 
+    grid-row: 4/5;
+}
+.tres {
+    background-color: #b3ad00;
+    grid-column:3/4 ; 
+    grid-row: 4/5;
+}
+.cero {
+    background-color: #ff0000;
+    grid-column:1/2 ; 
+    grid-row: 5/6;
+}
+.punto {
+    background-color: #21b300;
+    grid-column:2/3 ; 
+    grid-row: 5/6;
+}
+.borrar {
+    background-color: #b39e00;
+    grid-column:3/4 ; 
+    grid-row: 5/6;
+}
+.igual {
+    background-color: #9a700c;
+    grid-column:4/5 ; 
+    grid-row: 2/6;
+}
+
+@media(min-width:1020px) {
+    .tarjetas {
+        flex-direction: row;
+    }
+
+    .tarjetas-motos {
+        max-width: 300px;
+
+    }
+
+    .contenedor-header {
+        flex-direction: row;
+    }
+
+    .header-dos {
+        flex-direction: row;
+    }
+
+    .header-dos {
+        align-items: normal;
+    }
+}
