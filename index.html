@@ -65,25 +65,25 @@
     </header>
     <main>
         <div class="container-calculator">
-            <div class="resultado "></div>
+            <div class="resultado ">0</div>
             <div class="operacion ">
-                <div class="sumar flex">+</div>
-                <div class="restar flex">-</div>
-                <div class="multiplicar flex">x</div>
-                <div class="dividir flex">%</div>
-                <div class="siete flex">7</div>
-                <div class="ocho flex">8</div>
-                <div class="nueve flex">9</div>
-                <div class="cuatro flex">4</div>
-                <div class="cinco flex">5</div>
-                <div class="seis flex">6</div>
-                <div class="uno flex">1</div>
-                <div class="dos flex">2</div>
-                <div class="tres flex">3</div>
-                <div class="cero flex">0</div>
-                <div class="punto flex">.</div>
-                <div class="borrar flex">C</div>
-                <div class="igual flex">=</div>
+                <div class="sumar flex" onclick="operaciones(this)">+</div>
+                <div class="restar flex" onclick="operaciones(this)">-</div>
+                <div class="multiplicar flex" onclick="operaciones(this)">x</div>
+                <div class="dividir flex" onclick="operaciones(this)">%</div>
+                <div class="siete flex" onclick="cambiarContenidoResultado(this)">7</div>
+                <div class="ocho flex" onclick="cambiarContenidoResultado(this)">8</div>
+                <div class="nueve flex" onclick="cambiarContenidoResultado(this)">9</div>
+                <div class="cuatro flex" onclick="cambiarContenidoResultado(this)">4</div>
+                <div class="cinco flex" onclick="cambiarContenidoResultado(this)">5</div>
+                <div class="seis flex" onclick="cambiarContenidoResultado(this)">6</div>
+                <div class="uno flex" onclick="cambiarContenidoResultado(this)">1</div>
+                <div class="dos flex" onclick="cambiarContenidoResultado(this)">2</div>
+                <div class="tres flex" onclick="cambiarContenidoResultado(this)">3</div>
+                <div class="cero flex" onclick="cambiarContenidoResultado(this)">0</div>
+                <div class="punto flex" onclick="cambiarContenidoResultado(this)">.</div>
+                <div class="borrar flex" onclick="borrar()">C</div>
+                <div class="igual flex" onclick="operaciones(this)">=</div>
             </div>
         </div>
     </main>
